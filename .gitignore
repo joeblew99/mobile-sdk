@@ -1,2 +1,7 @@
 wp/bin
 wp/obj
+
+
+#gomobile ouputs (big !)
+*.aar
+*.framework
