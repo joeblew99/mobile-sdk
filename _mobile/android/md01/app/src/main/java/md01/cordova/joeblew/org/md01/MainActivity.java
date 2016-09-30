@@ -17,8 +17,6 @@ import android.view.MenuItem;
 import go.logpackermobilesdk.Logpackermobilesdk;
 
 
-
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -50,14 +48,14 @@ public class MainActivity extends AppCompatActivity {
                 String logPackerText = "  empty :)";
                 try {
 
+                    Client client = Logpackermobilesdk.newClient("https://logpacker.mywebsite.com", "dev", android.os.Build.MODEL);
+                    //client.setCloudKey("CLOUD-KEY-123");
 
-                    Logpackermobilesdk.Client client = Logpackermobilesdk.newClient("https://logpacker.mywebsite.com", "dev", android.os.Build.MODEL);
-
-                    Logpackermobilesdk.Message msg = client.NewMessage();
+                    Message msg = client.newMessage();
                     msg.setMessage("Crash is here!");
                     // Use another optional setters for msg object
 
-                    client.Send(msg); // Send will return Cluster response
+                    client.send(msg); // Send will return Cluster response
 
 
 
