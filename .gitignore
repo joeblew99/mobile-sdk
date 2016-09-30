@@ -1,7 +1,8 @@
+# c# outputs 
 wp/bin
 wp/obj
 
 
-#gomobile ouputs (big !)
+# gomobile outputs
 *.aar
 *.framework

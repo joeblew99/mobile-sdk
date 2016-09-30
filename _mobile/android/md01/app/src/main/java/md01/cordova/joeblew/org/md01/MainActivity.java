@@ -15,7 +15,8 @@ import android.view.MenuItem;
 // import go.hello.Hello;
 
 import go.logpackermobilesdk.Logpackermobilesdk;
-
+import go.logpackermobilesdk.Client;
+import go.logpackermobilesdk.Message;
 
 public class MainActivity extends AppCompatActivity {
 
